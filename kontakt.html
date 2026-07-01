@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Kontakt · EL Tech</title>
+<meta name="description" content="Zeig uns die eine Aufgabe, die dir Zeit raubt. Wir melden uns unverbindlich mit einer ersten Einschätzung. hallo@el-tech.io">
+<meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1">
+<link rel="canonical" href="https://el-tech.io/kontakt.html">
+<meta name="theme-color" content="#f4f1ec">
+<link rel="icon" href="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%2032%2032'%3E%3Crect%20width='32'%20height='32'%20rx='7'%20fill='%231a1614'/%3E%3Ctext%20x='13'%20y='21'%20font-family='Arial,sans-serif'%20font-size='13'%20font-weight='700'%20fill='%23f4f1ec'%20text-anchor='middle'%3EEL%3C/text%3E%3Ccircle%20cx='25'%20cy='22'%20r='2.4'%20fill='%23e85d15'/%3E%3C/svg%3E">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="EL Tech">
+<meta property="og:locale" content="de_DE">
+<meta property="og:url" content="https://el-tech.io/kontakt.html">
+<meta property="og:title" content="Kontakt · EL Tech">
+<meta property="og:description" content="Beschreib kurz, was bei dir gerade Zeit frisst. Wir melden uns mit einer ersten Einschätzung.">
+<meta property="og:image" content="https://el-tech.io/og.png">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Kontakt · EL Tech">
+<meta name="twitter:description" content="Beschreib kurz, was bei dir gerade Zeit frisst. Wir melden uns mit einer ersten Einschätzung.">
+<meta name="twitter:image" content="https://el-tech.io/og.png">
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Inter+Tight:wght@500;600;700;800;900&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="styles.css">
+</head>
+<body data-title-de="Kontakt · EL Tech" data-title-en="Contact · EL Tech">
+
+<div class="mini-clock" id="miniClock" aria-hidden="true"><div class="mc-ring" id="mcRing"></div><div class="mc-hand mc-hour" id="mcHour"></div><div class="mc-hand mc-min" id="mcMin"></div><div class="mc-center"></div></div>
+
+<div class="site-header">
+<div class="announce"><div class="slot" id="slotNav"><span class="slot-mark"></span><span class="slot-text"></span></div></div>
+<nav id="nav">
+  <a href="index.html" class="logo">EL TECH<span>.</span></a>
+  <ul class="nav-links" id="navLinks">
+    <li><a data-i18n="nav.services" href="leistungen.html">Leistungen</a></li>
+    <li><a data-i18n="nav.work" href="projekte.html">Projekte</a></li>
+    <li><a data-i18n="nav.about" href="ueber-uns.html">Über uns</a></li>
+    <li><button id="langToggle" class="lang-toggle" onclick="toggleLang()" aria-label="Switch language">EN</button></li>
+    <li><a data-i18n="nav.cta" href="kontakt.html" class="nav-cta">Aufgabe zeigen</a></li>
+  </ul>
+  <button class="hamburger" onclick="toggleMenu()" aria-label="Menü"><span></span><span></span><span></span></button>
+</nav>
+</div>
+
+<section class="contact-wrap reveal" id="kontakt" style="padding-top:8rem">
+  <div class="contact-card">
+    <div class="contact-left">
+      <span class="contact-kicker" data-i18n="contact.kicker">Kontakt</span>
+      <h2 data-i18n-html="contact.h2">Zeig uns, was dir die <span class="u-accent">Zeit</span> raubt.</h2>
+      <div class="slot" id="slotContact"><span class="slot-mark"></span><span class="slot-text"></span></div>
+      <p data-i18n="contact.p">Beschreib kurz, was bei dir gerade Zeit frisst. Wir melden uns unverbindlich mit einer ersten Einschätzung.</p>
+      <a href="mailto:hallo@el-tech.io" class="email-link">hallo@el-tech.io</a>
+    </div>
+    <form class="cform" onsubmit="handleContact(event)">
+      <input type="hidden" name="access_key" value="c8dde050-16c8-4c1c-a4a6-d0bd002f10e5">
+      <input type="hidden" name="subject" value="Neue Anfrage über el-tech.io">
+      <input type="hidden" name="from_name" value="EL Tech Website">
+      <input type="checkbox" name="botcheck" style="display:none" tabindex="-1" autocomplete="off" aria-hidden="true">
+      <label class="field"><span class="field-label" data-i18n="form.name">Name</span><input class="inp" type="text" name="name" data-i18n-ph="form.name_ph" placeholder="Dein Name" autocomplete="name" required></label>
+      <label class="field"><span class="field-label" data-i18n="form.email">E-Mail</span><input class="inp" type="email" name="email" placeholder="name@firma.de" data-i18n-ph="form.email_ph" autocomplete="email" required></label>
+      <label class="field"><span class="field-label" data-i18n="form.task">Die Aufgabe</span><textarea name="message" data-i18n-ph="form.task_ph" placeholder="Was passiert heute von Hand — und welche Tools sind im Spiel?" required></textarea></label>
+      <button class="btn btn-dark" type="submit"><span data-i18n="form.send">Absenden</span><svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M12 5l7 7-7 7"/></svg></button>
+      <div class="form-status" id="formStatus" data-i18n="form.status">Danke, wir melden uns innerhalb von 48 Stunden bei dir.</div>
+    </form>
+  </div>
+</section>
+
+<footer>
+  <a href="index.html" class="logo">EL TECH<span>.</span></a>
+  <div class="footer-links">
+    <a href="leistungen.html" data-i18n="nav.services">Leistungen</a>
+    <a href="projekte.html" data-i18n="nav.work">Projekte</a>
+    <a href="ueber-uns.html" data-i18n="nav.about">Über uns</a>
+    <a href="kontakt.html" data-i18n="footer.contact">Kontakt</a>
+    <a href="datenschutz.html" data-i18n="footer.privacy">Datenschutz</a>
+    <a href="agb.html" data-i18n="footer.terms">AGB</a>
+    <a href="datenloeschung.html" data-i18n="footer.deletion">Datenlöschung</a>
+    <a href="impressum.html" data-i18n="footer.imprint">Impressum</a>
+  </div>
+  <div class="footer-copy">© 2026 EL Tech GbR</div>
+</footer>
+<script src="app.js"></script>
+</body>
+</html>

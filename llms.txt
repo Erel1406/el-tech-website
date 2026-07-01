@@ -1,0 +1,25 @@
+# EL Tech
+
+> EL Tech ist eine Automatisierungs- und IT-Dienstleistungs-Agentur aus Nürnberg (Deutschland). Wir entwickeln maßgeschneiderte Automatisierungen für genau die Aufgaben, die Unternehmen täglich Zeit stehlen — vom manuellen Einzelschritt bis zum durchgängigen, KI-gestützten Prozess.
+
+## Leistungen
+
+- **Prozessautomatisierung**: Analyse und Automatisierung wiederkehrender manueller Abläufe.
+- **Workflow- & Hyperautomatisierung**: Verkettung von Tools, APIs und KI zu durchgängigen End-to-End-Prozessen.
+- **KI-Integration**: Einbindung von KI-Modellen in bestehende Geschäftsprozesse.
+- **IT-Dienstleistungen**: Konzeption, Umsetzung, Wartung und Betrieb digitaler Systeme.
+
+## Vorgehen
+
+Kunden zeigen uns eine konkrete Aufgabe, die heute von Hand erledigt wird. Wir analysieren den Prozess, konzipieren die Automatisierung und setzen sie um — inklusive Wartung. Erste Einschätzung unverbindlich.
+
+## Kontakt
+
+- E-Mail: hallo@el-tech.io
+- Telefon: +49 176 14265579
+- Standort: Nürnberg, Deutschland
+- Website: https://el-tech.io
+
+## Unternehmen
+
+EL Tech GbR, Oedenberger Str. 97, 90491 Nürnberg, Deutschland.

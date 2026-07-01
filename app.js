@@ -359,7 +359,7 @@ function renderSceneTask() {
   if (!el) return;
   if (!window.__userTask) { el.hidden = true; return; }
   el.hidden = false;
-  el.innerHTML = I18N[LANG]['scene.task_label'] + ' <b>«' + window.__userTask.replace(/</g, '&lt;') + '»</b>';
+  el.innerHTML = I18N[LANG]['scene.task_label'] + ' <b>«' + window.__userTask.replace(/[<>&"']/g, c => ({'<':'&lt;','>':'&gt;','&':'&amp;','"':'&quot;',"'":'&#39;'}[c])) + '»</b>';
 }
 
 /* ───────── Slots ───────── */

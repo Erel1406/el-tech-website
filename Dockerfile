@@ -3,6 +3,7 @@ FROM nginx:1.27-alpine
 
 # nginx-Konfiguration
 COPY nginx.conf /etc/nginx/conf.d/default.conf
+COPY security-headers.conf /etc/nginx/security-headers.conf
 
 # nur die Website-Dateien ins Web-Root (keine internen Dateien)
 COPY index.html leistungen.html projekte.html ueber-uns.html kontakt.html \

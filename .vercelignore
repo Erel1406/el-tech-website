@@ -1,2 +1,6 @@
-index.backup.html
+_backups/
+LAUNCH-TODO.md
+README.md
 .claude
+.DS_Store
+.git

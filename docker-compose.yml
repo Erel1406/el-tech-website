@@ -1,0 +1,11 @@
+services:
+  web:
+    build: .
+    image: eltech-website
+    container_name: eltech-website
+    restart: unless-stopped
+    ports:
+      # Nur auf localhost gebunden -> von außen NICHT direkt erreichbar,
+      # nur dein nginx-Reverse-Proxy leitet dorthin weiter.
+      # 8090 bei Konflikt anpassen (freien Port mit den Befehlen unten finden).
+      - "127.0.0.1:8090:80"

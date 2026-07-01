@@ -252,7 +252,7 @@ footer { border-top: 1px solid rgba(26,22,20,0.06); padding: 2.5rem; max-width: 
 @media (prefers-reduced-motion: reduce) {
   *, *::after, *::before { animation-duration: 0.001ms !important; animation-iteration-count: 1 !important; }
   .reveal { transition: opacity 0.4s ease; transform: none; }
-  .proof-close em::after { transform: scaleX(1) !important; }
+  .proof-close em::after, .cases-close em::after { transform: scaleX(1) !important; }
   html { scroll-behavior: auto; }
 }
 
@@ -306,7 +306,8 @@ footer { border-top: 1px solid rgba(26,22,20,0.06); padding: 2.5rem; max-width: 
 .case-card .big { font-family: var(--display); font-size: clamp(1.6rem, 3vw, 2.3rem); font-weight: 800; color: var(--accent); letter-spacing: -1px; white-space: nowrap; }
 .case-card p { font-size: 1.02rem; color: var(--ink); line-height: 1.55; }
 .cases-close { text-align: center; font-family: var(--display); font-size: clamp(1.3rem, 2.6vw, 1.9rem); font-weight: 600; letter-spacing: -0.6px; color: var(--ink); margin-top: 2.75rem; }
-.cases-close em { font-style: normal; color: var(--accent); }
+.cases-close em { font-style: normal; color: var(--accent); position: relative; }
+.cases-close em::after { content: ''; position: absolute; left: 0; bottom: -0.16em; height: 0.06em; width: 100%; background: var(--accent); border-radius: 4px; transform: scaleX(0); transform-origin: left; animation: ulLoop 3.4s cubic-bezier(.5,0,.2,1) infinite; }
 
 @media (max-width: 900px) {
   .services-grid { grid-template-columns: 1fr; }

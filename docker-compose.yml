@@ -4,8 +4,13 @@ services:
     image: eltech-website
     container_name: eltech-website
     restart: unless-stopped
-    ports:
-      # Nur auf localhost gebunden -> von außen NICHT direkt erreichbar,
-      # nur dein nginx-Reverse-Proxy leitet dorthin weiter.
-      # 8090 bei Konflikt anpassen (freien Port mit den Befehlen unten finden).
-      - "127.0.0.1:8090:80"
+    networks:
+      - proxy
+    # Kein Host-Port nötig: global_nginx erreicht den Container über das
+    # gemeinsame Netzwerk als "eltech-website:80".
+    # Nur zum lokalen Testen optional: ports: ["127.0.0.1:8090:80"]
+
+networks:
+  proxy:
+    external: true
+    name: cc_shared_net

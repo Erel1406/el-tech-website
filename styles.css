@@ -313,3 +313,8 @@ footer { border-top: 1px solid rgba(26,22,20,0.06); padding: 2.5rem; max-width: 
   .services-grid { grid-template-columns: 1fr; }
   .case-card { flex-direction: column; gap: 0.6rem; }
 }
+
+/* ─── LEGAL: zweisprachig (DE/EN Umschaltung via <html lang>) ─── */
+[data-lang="en"] { display: none; }
+html[lang="en"] [data-lang="de"] { display: none; }
+html[lang="en"] [data-lang="en"] { display: block; }

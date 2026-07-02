@@ -15,7 +15,7 @@ Kunden zeigen uns eine konkrete Aufgabe, die heute von Hand erledigt wird. Wir a
 
 ## Kontakt
 
-- E-Mail: hallo@el-tech.io
+- E-Mail: hello@el-tech.io
 - Telefon: +49 176 14265579
 - Standort: Nürnberg, Deutschland
 - Website: https://el-tech.io

@@ -215,7 +215,7 @@ async function handleContact(e) {
     // Fallback: öffnet das Mailprogramm, falls der Versand scheitert
     const subj = LANG === 'de' ? 'Anfrage' : 'Inquiry';
     const body = `Name: ${f.name.value}%0AEmail: ${f.email.value}%0A%0A${encodeURIComponent(f.message.value)}`;
-    window.location.href = `mailto:hallo@el-tech.io?subject=${encodeURIComponent(subj)}&body=${body}`;
+    window.location.href = `mailto:hello@el-tech.io?subject=${encodeURIComponent(subj)}&body=${body}`;
   } finally {
     btn.disabled = false;
   }
